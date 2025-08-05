@@ -12,7 +12,7 @@ const ImageCarousel = () => {
 
   const slides = [
     {
-      // title: 'Scaling Wolf Framework Dashboard',
+      // title: 'Dream100club Framework Dashboard',
       // description: 'Complete overview of your business scaling journey',
       image: image1,
     },

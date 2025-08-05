@@ -7,12 +7,12 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'What is the Scaling Wolf Framework?',
-      answer: 'The Scaling Wolf Framework is our proprietary methodology designed to help entrepreneurs move from survival mode to 10x-100x scale in revenue, branches, and team size within 3 years. It combines strategic planning, operational excellence, and mindset transformation to create sustainable business growth.'
+      question: 'What is the Dream100club Framework?',
+      answer: 'The Dream100club Framework is our proprietary methodology designed to help entrepreneurs move from survival mode to 10x-100x scale in revenue, branches, and team size within 3 years. It combines strategic planning, operational excellence, and mindset transformation to create sustainable business growth.'
     },
     {
       question: 'How does the lifetime membership work?',
-      answer: 'For a one-time payment of ₹999, you get lifetime access to all our tools, templates, expert sessions, and community. This includes all future updates, new tools, and additional expert sessions we add to the platform. No recurring fees, ever.'
+      answer: 'For a one-time payment of ₹999, you getto all our tools, templates, expert sessions, and community. This includes all future updates, new tools, and additional expert sessions we add to the platform.'
     },
     {
       question: 'What industries do your templates cover?',
@@ -25,10 +25,6 @@ const FAQ = () => {
     {
       question: 'Can I really achieve 10x growth in 3 years?',
       answer: 'While results vary by business and implementation, our framework is designed based on proven strategies that have helped thousands of entrepreneurs achieve significant growth. 95% of our active members see measurable growth within 30 days of implementation.'
-    },
-    {
-      question: 'What if I\'m not satisfied with the membership?',
-      answer: 'We offer a 30-day money-back guarantee. If you\'re not completely satisfied with the value you receive from our tools, templates, and community within the first 30 days, we\'ll refund your entire payment, no questions asked.'
     },
     {
       question: 'How do I access the tools and templates?',
@@ -57,7 +53,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-600">
-            Everything you need to know about Scaling Wolf membership
+            Everything you need to know about Dream100club membership
           </p>
         </motion.div>
 

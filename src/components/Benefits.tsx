@@ -21,7 +21,7 @@ const Benefits = () => {
     {
       icon: TrendingUp,
       title: 'Proven Results',
-      description: 'Our Scaling Wolf Framework helps 95% of members achieve significant growth within 30 days',
+      description: 'Our Dream100club Framework helps 95% of members achieve significant growth within 30 days',
       stat: '95% See Growth in 30 Days',
       gradient: 'from-green-500 to-emerald-500'
     },
@@ -44,7 +44,7 @@ const Benefits = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Why 10,000+ Entrepreneurs Choose Scaling Wolf
+            Why 10,000+ Entrepreneurs Choose Dream100club
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Join a proven ecosystem that transforms businesses from survival mode to exponential growth

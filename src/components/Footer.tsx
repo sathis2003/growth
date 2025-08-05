@@ -12,10 +12,10 @@ const Footer = () => {
               <div className="w-10 h-10 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <Zap className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold">Scaling Wolf</span>
+              <span className="text-xl font-bold">Dream100club</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Empowering entrepreneurs to scale from survival mode to 10x-100x growth using our proven Scaling Wolf Framework.
+              Empowering entrepreneurs to scale from survival mode to 10x-100x growth using our proven Dream100club Framework.
             </p>
             <div className="flex space-x-4">
               <Facebook className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors" />
@@ -55,7 +55,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-indigo-400" />
-                <span className="text-gray-400">support@Scaling Wolf</span>
+                <span className="text-gray-400">support@Dream100club</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-indigo-400" />
@@ -72,7 +72,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Scaling Wolf. All rights reserved.
+            © 2024 Dream100club. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>

@@ -36,7 +36,7 @@ const Header = () => {
             </div> */} 
             <img src={logo} alt="Logo" className="w-10 h-10 " />
             <span className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Scaling Wolf 
+              Dream100club 
             </span>
           </div>
           {/* Desktop Navigation */}
@@ -44,7 +44,7 @@ const Header = () => {
             <a href="#tools" className="text-gray-700 hover:text-indigo-600 transition-colors">
               Tools
             </a>
-            <a href="#templates" className="text-gray-700 hover:text-indigo-600 transition-colors">
+            <a href="#tools" className="text-gray-700 hover:text-indigo-600 transition-colors">
               Templates
             </a>
             <a href="#community" className="text-gray-700 hover:text-indigo-600 transition-colors">
@@ -54,7 +54,6 @@ const Header = () => {
               Pricing
             </a>
           </nav>
-
           {/* CTA Button */}
           <motion.button
             whileHover={{ scale: 1.05 }}

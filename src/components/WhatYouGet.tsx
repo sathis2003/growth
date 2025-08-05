@@ -21,7 +21,7 @@ const WhatYouGet = () => {
     {
       icon: FileText,
       title: 'Industry Templates Library',
-      subtitle: '200+ Ready-to-Use Templates',
+      subtitle: '20+ Ready-to-Use Templates',
       items: [
         'Manufacturing Scale-up Templates',
         'Retail Growth Playbooks',
@@ -60,11 +60,11 @@ const WhatYouGet = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Everything You Need to Scale with the{' '}
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Scaling Wolf Framework
+              Dream100club Framework
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get lifetime access to our complete ecosystem of tools, templates, and expert guidance
+            Get our complete ecosystem of tools, templates, and expert guidance
           </p>
         </motion.div>
 

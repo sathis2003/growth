@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const FinalCTA = () => {
   const trustBadges = [
-    { icon: Shield, text: '30-Day Guarantee' },
+    { icon: Shield, text: '7-day Guarantee' },
     { icon: Users, text: '10,000+ Members' },
     { icon: Star, text: '4.9/5 Rating' },
     { icon: Zap, text: 'Instant Access' }
@@ -29,17 +29,17 @@ const FinalCTA = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
             Ready to Transform Your Business with the{' '}
             <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-              Scaling Wolf Framework?
+              Dream100club ?
             </span>
           </h2>
           
           <p className="text-xl text-indigo-200 max-w-2xl mx-auto">
-            Join thousands of successful entrepreneurs who've achieved 10x growth using our proven framework, premium tools, and expert community
+           Join thousands of successful entrepreneurs who've achieved 10x growth using our proven business growth framework, powerful systems, and expert community
           </p>
 
-          <p>
-            <span className="text-yellow-400 font-semibold"> Actual Value: <span className='line-through'>₹4999</span></span> 
-          </p>
+          <h1>
+            <span className="text-yellow-400 font-semibold text-4xl"> Actual Value: <span className='line-through'>₹4999</span></span> 
+          </h1>
 
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -47,12 +47,12 @@ const FinalCTA = () => {
             className="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-12 py-6 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 flex items-center space-x-3 mx-auto"
           >
             <Zap className="w-8 h-8" />
-            <span>Start Your Journey - ₹999</span>
+            <span>Become a Member Today -  ₹999</span>
           </motion.button>
 
           <p className="text-indigo-300 text-lg">
             <Shield className="w-5 h-5 inline mr-2" />
-            30-day money-back guarantee • Lifetime access • No recurring fees
+            7-day money-back guarantee
           </p>
 
           {/* Trust Badges */}

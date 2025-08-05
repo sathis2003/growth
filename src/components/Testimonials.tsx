@@ -9,7 +9,7 @@ const Testimonials = () => {
       company: 'FashionForward Retail',
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
       rating: 5,
-      quote: 'The Scaling Wolf Framework transformed my retail business from ₹2 lakhs to ₹25 lakhs monthly revenue in just 18 months. The risk analysis tool alone saved me from a costly expansion mistake.',
+      quote: 'The Dream100club Framework transformed my retail business from ₹2 lakhs to ₹25 lakhs monthly revenue in just 18 months. The risk analysis tool alone saved me from a costly expansion mistake.',
       result: '12.5x Revenue Growth'
     },
     {
@@ -17,7 +17,7 @@ const Testimonials = () => {
       company: 'MindsetMastery Coaching',
       image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
       rating: 5,
-      quote: 'As a business coach, I thought I knew scaling. Scaling Wolf showed me frameworks I never considered. My coaching practice grew from 50 to 500+ clients using their community-building strategies.',
+      quote: 'As a business coach, I thought I knew scaling. Dream100club showed me frameworks I never considered. My coaching practice grew from 50 to 500+ clients using their community-building strategies.',
       result: '10x Client Base Growth'
     },
     {
@@ -49,7 +49,7 @@ const Testimonials = () => {
             Success Stories from Our Community
           </h2>
           <p className="text-xl text-indigo-200 max-w-3xl mx-auto">
-            Real entrepreneurs, real results with the Scaling Wolf Framework
+            Real entrepreneurs, real results with the Dream100club Framework
           </p>
         </motion.div>
 

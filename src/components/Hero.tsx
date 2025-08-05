@@ -45,7 +45,7 @@ const Hero = () => {
             >
               <div className="flex items-center space-x-3">
                 <CheckCircle className="w-6 h-6 text-green-500" />
-                <span className="text-gray-700">Proprietary Scaling Wolf Framework for 10x-100x growth</span>
+                <span className="text-gray-700">Proprietary Dream100club Framework for 10x-100x growth</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="w-6 h-6 text-green-500" />
@@ -69,7 +69,7 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-xl transition-all duration-300"
               >
-                Start Your Journey - ₹999
+                Become a Member Today - <span className="line-through text-yellow-200 text-base">₹4999</span> ₹999
               </motion.button>
               {/* <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -118,7 +118,7 @@ const Hero = () => {
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
                 <h3 className="text-white font-semibold text-lg">
-                  See How the Scaling Wolf Framework Transforms Businesses
+                  See How the Dream100club Framework Transforms Businesses
                 </h3>
               </div>
             </div>

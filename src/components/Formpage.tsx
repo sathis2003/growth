@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import video from '../../images/video/KGF.mp4';
 
 const FormPage = () => {
   return (
     <section className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 flex items-center justify-center px-4">
       <div className="max-w-6xl w-full grid lg:grid-cols-2 gap-10 py-16">
-        
-        {/* Left: Full-Height YouTube Short */}
+
+        {/* Left: Full-Height Video */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -14,14 +15,14 @@ const FormPage = () => {
           className="h-full w-full rounded-2xl overflow-hidden shadow-xl flex items-center justify-center"
         >
           <div className="w-full h-full">
-            <iframe
+            <video
               className="w-full h-full rounded-2xl"
-              src="https://www.youtube.com/embed/pEq-8mq5FME"
-              title="Dream100 Short Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+              src={video}
+              controls
+              autoPlay
+              muted
+              loop
+            ></video>
           </div>
         </motion.div>
 
@@ -32,8 +33,11 @@ const FormPage = () => {
           transition={{ duration: 0.8 }}
           className="bg-white shadow-xl rounded-2xl p-8 space-y-6 flex flex-col justify-center"
         >
-          <h2 className="text-3xl font-bold text-gray-900">Join the Scaling Wolf Webinar</h2>
-          <p className="text-sm text-gray-500 mb-4">Grab your exclusive bonuses for just <span className="font-semibold text-purple-600">₹99</span></p>
+          <h2 className="text-3xl font-bold text-gray-900">
+            Grab Your Membership Today for Just{' '}
+            <span className="font-semibold text-purple-600">₹999</span>{' '}
+            <span className="line-through text-gray-400 text-lg ml-2">₹4999</span>
+          </h2>
 
           <form className="space-y-4">
             <div>
@@ -87,10 +91,13 @@ const FormPage = () => {
 
             <button
               type="submit"
-              className="w-full mt-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold py-3 rounded-lg hover:shadow-lg transition-all duration-300"
+              className="w-full mt-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold py-3 rounded-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-lg"
             >
-              Register Now for ₹99
+              Become a Member Today
+              <span className="line-through text-yellow-200 text-base">₹4999</span>
+              <span className="text-white text-xl font-bold">₹999</span>
             </button>
+
           </form>
         </motion.div>
       </div>
