@@ -17,7 +17,7 @@ const Dream100LandingPage = () => {
       <Dream100Tools />
       <Dream100Network />
       <Dream100SuccessStories />
-      <Dream100Urgency />
+      {/* <Dream100Urgency /> */}
       <div data-section="membership">
         <Dream100Membership />
       </div>
