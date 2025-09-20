@@ -1,109 +1,83 @@
-import React, { useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from "react";
 
-const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+const Dream100FAQ = () => {
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   const faqs = [
     {
-      question: 'What is the Dream100club Framework?',
-      answer: 'The Dream100club Framework is our proprietary methodology designed to help entrepreneurs move from survival mode to 10x-100x scale in revenue, branches, and team size within 3 years. It combines strategic planning, operational excellence, and mindset transformation to create sustainable business growth.'
+      question: "What is the Dream100club Framework?",
+      answer: "The Dream100club Framework is our proprietary methodology designed to help entrepreneurs move from survival mode to 100x scale in revenue, branches, and team size within 3 years. It combines strategic planning, operational excellence, and mindset transformation to create sustainable business growth."
     },
     {
-      question: 'How does the lifetime membership work?',
-      answer: 'For a one-time payment of ₹999, you getto all our tools, templates, expert sessions, and community. This includes all future updates, new tools, and additional expert sessions we add to the platform.'
+      question: "How does the one year membership work?",
+      answer: "Your membership gives you instant access to all tools, templates, and expert sessions for a full year. You'll receive continuous updates, new tools, and can participate in all live sessions and community forums."
     },
     {
-      question: 'What industries do your templates cover?',
-      answer: 'Our templates are specifically designed for Manufacturing, Retail, E-commerce, F&B (Food & Beverage), and Tech startups. Each template is industry-specific and includes real-world examples and best practices from successful businesses in those sectors.'
+      question: "What industries do your templates cover?",
+      answer: "We cover Manufacturing, Retail, E-commerce, F&B, Tech Startups, and many other industries with specific scale-up templates and frameworks tailored to each sector's unique challenges."
     },
     {
-      question: 'Who are the experts in your community?',
-      answer: 'Our expert network includes specialists in Digital Marketing with AI, Branding Strategy, GST Tax Optimization, Team Building, Operations, and more. Each expert conducts 2 sessions per month, giving you 24 expert sessions annually with direct access to industry leaders.'
+      question: "Who are the experts in your community?",
+      answer: "Our expert panel includes Digital Marketing specialists, Branding strategists, GST Tax optimization experts, Team building consultants, and successful entrepreneurs who have scaled multiple businesses."
     },
     {
-      question: 'Can I really achieve 10x growth in 3 years?',
-      answer: 'While results vary by business and implementation, our framework is designed based on proven strategies that have helped thousands of entrepreneurs achieve significant growth. 95% of our active members see measurable growth within 30 days of implementation.'
+      question: "Can I really achieve 100x growth in 3 years?",
+      answer: "While results vary, 96% of our members see significant growth within 30 days. The 100x framework focuses on systematic scaling of revenue, operations, and team size using proven methodologies."
     },
     {
-      question: 'How do I access the tools and templates?',
-      answer: 'Once you join, you\'ll receive immediate access to our member portal where all tools, templates, and resources are organized by category. You\'ll also get login credentials for our private community forum and calendar links for expert sessions.'
-    },
-    {
-      question: 'Is there ongoing support available?',
-      answer: 'Yes! You get 24/7 access to our private community forum where you can connect with other entrepreneurs, ask questions, and get peer support. Plus, our expert sessions include live Q&A where you can get direct answers to your specific challenges.'
+      question: "Is there ongoing support available?",
+      answer: "Yes! You get 24/7 community support, monthly live Q&A sessions, peer mentorship through mastermind groups, and direct access to experts during scheduled sessions."
     }
   ];
 
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-xl text-gray-600">
-            Everything you need to know about Dream100club membership
-          </p>
-        </motion.div>
+    <section className="py-24 px-6 bg-gray-900">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-4xl md:text-6xl font-black text-center text-white mb-16 leading-tight">
+          FREQUENTLY ASKED
+          <br />
+          <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            QUESTIONS
+          </span>
+        </h2>
 
-        <div className="space-y-4">
+        <div className="space-y-6">
           {faqs.map((faq, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-gray-50 rounded-2xl overflow-hidden"
+              className="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden hover:border-blue-500/30 transition-all duration-300"
             >
               <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-100 transition-colors duration-200"
+                onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
+                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-750 transition-colors"
               >
-                <h3 className="text-lg font-semibold text-gray-900 pr-4">
-                  {faq.question}
-                </h3>
-                {openIndex === index ? (
-                  <ChevronUp className="w-6 h-6 text-indigo-600 flex-shrink-0" />
-                ) : (
-                  <ChevronDown className="w-6 h-6 text-gray-400 flex-shrink-0" />
-                )}
+                <h3 className="text-lg font-bold text-white">{faq.question}</h3>
+                <svg
+                  className={`w-6 h-6 text-blue-400 transform transition-transform duration-200 ${
+                    openFAQ === index ? 'rotate-180' : ''
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
               </button>
               
-              <AnimatePresence>
-                {openIndex === index && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="overflow-hidden"
-                  >
-                    <div className="px-8 pb-6">
-                      <p className="text-gray-600 leading-relaxed">
-                        {faq.answer}
-                      </p>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
+              <div
+                className={`overflow-hidden transition-all duration-300 ${
+                  openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                }`}
+              >
+                <div className="px-8 pb-6">
+                  <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
     </section>
   );
 };
-
-export default FAQ;
+export default Dream100FAQ;
