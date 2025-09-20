@@ -13,15 +13,17 @@ const Dream100LandingPage = () => {
     <div className="min-h-screen bg-black text-white">
       <Dream100Hero />
       <Dream100Stats />
+       
       <Dream100Benefits />
-      <Dream100Tools />
-      <Dream100Network />
-      <Dream100SuccessStories />
-      {/* <Dream100Urgency /> */}
       <div data-section="membership">
         <Dream100Membership />
       </div>
-      <Dream100FAQ />
+      <Dream100Tools />
+      {/* <Dream100Network /> */}
+      <Dream100SuccessStories />
+      {/* <Dream100Urgency /> */}
+     
+      {/* <Dream100FAQ /> */}
       <Dream100Footer />
     </div>
   );
