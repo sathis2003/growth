@@ -4,6 +4,7 @@ import Dream100Benefits from './Benifits';
 import Dream100Tools from './Tools';
 import Dream100Network from './Network';
 import Dream100Membership from './Form';
+import StrategicBriefings from './Statergy';
 import Dream100Footer from './Footer';
 import Dream100FAQ from './Faq';
 import Dream100SuccessStories from './SuccessStories';
@@ -22,7 +23,7 @@ const Dream100LandingPage = () => {
       {/* <Dream100Network /> */}
       <Dream100SuccessStories />
       {/* <Dream100Urgency /> */}
-     
+     <StrategicBriefings/>
       {/* <Dream100FAQ /> */}
       <Dream100Footer />
     </div>
